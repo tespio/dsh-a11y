@@ -262,7 +262,8 @@ node test/*.mjs
 ## Host findings (for the DSH team)
 
 These are host-level gaps observed while building this plugin. They are not
-fixed by global CSS or DOM hacks here.
+fixed by global CSS or DOM hacks here. They are tracked in
+[issue #1](https://github.com/tespio/dsh-a11y/issues/1).
 
 1. **No skip link.** The shell has no "skip to main content" control. The
    plugin can only put its link in `shell.overlay`, which is after the main
