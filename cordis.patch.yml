@@ -2,5 +2,5 @@
 # declared by package.json's dsh.client section.
 - insert:
     - id: dsh-a11y
-      name: '@local/dsh-a11y'
+      name: 'dsh-a11y'
       config: {}

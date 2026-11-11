@@ -11,8 +11,9 @@ The plugin adds coverage; it does not replace the shipped chat UI.
 
 ## Related work and the gap check (2026-11-11)
 
-The bare npm name `dsh-a11y` is still unclaimed (`npm view dsh-a11y` → 404),
-but the brief's "no accessibility plugin exists" premise is stale:
+This package publishes as `dsh-a11y` on npm. When the build started, the bare
+name was unclaimed, but the brief's "no accessibility plugin exists" premise was
+already stale:
 
 - [`@oh-my-dsh/dsh-accessibility`](https://www.npmjs.com/package/@oh-my-dsh/dsh-accessibility)
   (published `0.1.0-beta.3`, repo `omdsh-dev/dsh-accessibility`) is a
@@ -34,10 +35,21 @@ settings. It overlaps the diagnostic/settings surface only partially.
 
 ## Install
 
-```powershell
-# From the workspace root:
-#   plugin_manager -> install_bundle -> C:\...\default-workspace\dsh-a11y
+From npm:
+
+```sh
+dsh plugin --profile web add dsh-a11y
 ```
+
+Or install this checkout as a profile bundle:
+
+```powershell
+# plugin_manager -> install_bundle -> <absolute path to this directory>
+```
+
+The package is `dsh-a11y`; an older development profile may still have the
+earlier `@local/dsh-a11y` link installed. They register the same slot ids, so do
+not keep both enabled.
 
 The bundle has a no-op Host half (`index.js`) and a browser half
 (`client.js`, declared by `package.json`'s `dsh.client`). It installs as a normal

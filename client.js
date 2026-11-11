@@ -15,12 +15,12 @@
  * auditSubtree) is intentionally absent from this build.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-a11y',
+  id: 'dsh-a11y',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
 
-    const PKG = '@local/dsh-a11y';
+    const PKG = 'dsh-a11y';
     const NS = 'a11y';
     const STYLE_TAG_ID = PKG + '/client.css';
     const STORAGE_KEY = 'dsh-a11y.settings.v1';

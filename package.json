@@ -1,9 +1,26 @@
 {
-  "name": "@local/dsh-a11y",
+  "name": "dsh-a11y",
   "version": "0.1.0",
-  "private": true,
-  "description": "Accessibility layer for the DeepSeek Harness Web UI: coordinated announcements, keyboard navigation, and accessibility preferences.",
+  "description": "Accessibility layer for the DeepSeek Harness Web UI: coordinated announcements, keyboard navigation, and accessibility settings.",
   "type": "module",
+  "license": "MIT",
+  "author": "Andrei Dumitriu",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "accessibility",
+    "screen-reader",
+    "wcag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tespio/dsh-a11y.git"
+  },
+  "homepage": "https://github.com/tespio/dsh-a11y#readme",
+  "bugs": {
+    "url": "https://github.com/tespio/dsh-a11y/issues"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -14,9 +31,9 @@
     "index.js",
     "client.js",
     "cordis.patch.yml",
-    "locale/en.json",
-    "locale/zh.json",
+    "locale/*.json",
     "icon.svg",
+    "LICENSE",
     "README.md",
     "test/*.mjs"
   ],

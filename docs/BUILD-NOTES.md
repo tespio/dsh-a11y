@@ -12,7 +12,8 @@ resolves to the restored files, and the client re-registered successfully
 
 Practical consequence: keep a copy of this directory before reinstalling or
 bumping the version of a `link:` bundle in this profile. The generated card
-(`@local/dsh-a11y@0.1.0`) was left in place.
+(`@local/dsh-a11y@0.1.0`, the local dev copy) was left in place. The published
+package is `dsh-a11y`.
 
 ## Verification performed for this build
 
