@@ -1,0 +1,6 @@
+# dsh-a11y: one Host row (no Host-side behavior in v1) plus the browser half
+# declared by package.json's dsh.client section.
+- insert:
+    - id: dsh-a11y
+      name: '@local/dsh-a11y'
+      config: {}
