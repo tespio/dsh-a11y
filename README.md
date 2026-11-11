@@ -7,6 +7,11 @@ page. The v2 author kit (`ctx.a11y`, `<LiveRegion>`, `useFocusTrap`,
 
 The plugin adds coverage; it does not replace the shipped chat UI.
 
+[![npm version](https://img.shields.io/npm/v/dsh-a11y.svg)](https://www.npmjs.com/package/dsh-a11y)
+[![license](https://img.shields.io/npm/l/dsh-a11y.svg)](https://www.npmjs.com/package/dsh-a11y)
+
+**npm:** [`dsh-a11y@0.1.0`](https://www.npmjs.com/package/dsh-a11y)
+
 **Presentation:** [PPTX](docs/dsh-a11y-presentation.pptx) · [PDF](docs/dsh-a11y-presentation.pdf)
 
 ## Related work and the gap check (2026-11-11)
@@ -41,15 +46,16 @@ From npm:
 dsh plugin --profile web add dsh-a11y
 ```
 
+The latest npm release is `0.1.0`.
+
 Or install this checkout as a profile bundle:
 
 ```powershell
 # plugin_manager -> install_bundle -> <absolute path to this directory>
 ```
 
-The package is `dsh-a11y`; an older development profile may still have the
-earlier `@local/dsh-a11y` link installed. They register the same slot ids, so do
-not keep both enabled.
+If you previously installed a local development copy, remove it before
+installing the npm package; both register the same slot ids.
 
 The bundle has a no-op Host half (`index.js`) and a browser half
 (`client.js`, declared by `package.json`'s `dsh.client`). It installs as a normal
@@ -313,3 +319,7 @@ kit must audit only the caller's own subtree, never a foreign plugin's DOM.
 | `locale/en.json`, `locale/zh.json` | Plugin Manager metadata and the same strings as the runtime dictionaries. |
 | `icon.svg` | Bundle icon. |
 | `test/*.mjs` | Formatter, queue merging, normalization, locale parity. |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
