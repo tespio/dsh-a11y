@@ -278,17 +278,6 @@ fixed by global CSS or DOM hacks here.
    focus style, but the plugin's Emphasized setting is still useful because
    some host controls inherit only a subtle outline.
 
-## Build caveat
-
-During this build the harness's automatic report-card measurement ran right
-after the bundle was installed, and the linked source directory was emptied
-shortly afterwards. The source was restored from the build session; the profile
-junction resolves to the restored files and the client registers again. If you
-reinstall or bump the version, keep a copy of this directory first: the
-automatic measurement of a `link:` bundle is the observed trigger.
-
-The generated card (`@local/dsh-a11y@0.1.0`) was left in place.
-
 ## v2 (not in this build)
 
 The author kit remains the next step:
